@@ -1,0 +1,350 @@
+/* Keep secondary labels legible at laptop/mobile sizes, not just large screens. */
+:root {
+  --secondary-text: #5e7088;
+}
+
+.field {
+  min-width: 0;
+}
+
+.form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mobile-order-list {
+  display: none;
+}
+
+.page-heading > div > p:last-child,
+.orders-panel-header p,
+.stat-heading,
+.stat-caption,
+.section-eyebrow > small,
+.cell-subtext,
+.requester small,
+.destination-button small,
+.table-footer p,
+.dashboard-note p,
+.field-hint,
+.modal-description,
+.login-subtitle,
+.login-footer,
+.demo-box > small,
+.filter-help,
+.detail-status > span:last-child,
+.detail-list dt {
+  color: var(--secondary-text);
+}
+
+.stat-heading,
+.search-field input,
+.select-wrap select,
+.filter-main > .button,
+.orders-table td,
+.order-id,
+.destination-button,
+.requester,
+.trip-dates,
+.field label,
+.modal-footer .button {
+  font-size: 12px;
+}
+
+.stat-caption,
+.cell-subtext,
+.requester small,
+.destination-button small,
+.table-footer p,
+.pagination .button,
+.status-badge,
+.field-hint,
+.field-error,
+.info-box p,
+.dashboard-note p,
+.orders-table th,
+.filter-period .field label,
+.filter-help,
+.detail-list dt,
+.detail-list dd {
+  font-size: 11px;
+}
+
+.orders-table th {
+  color: #62758e;
+}
+
+.orders-table {
+  min-width: 850px;
+}
+
+.stat-caption {
+  line-height: 1.6;
+}
+
+.status-solicitado {
+  color: #846315;
+}
+
+.status-aprovado {
+  color: #247454;
+}
+
+.status-cancelado {
+  color: #657183;
+}
+
+.banner-copy p {
+  color: #496e9c;
+  font-size: 12px;
+}
+
+.banner-label {
+  color: #416eaa;
+}
+
+.topbar-user small,
+.breadcrumb,
+.breadcrumb strong,
+.current-date,
+.section-eyebrow > small {
+  color: #63768e;
+  font-size: 11px;
+}
+
+.orders-panel-header p,
+.modal-description,
+.modal-footer .button,
+.filter-period .field input,
+.filter-period .field select {
+  font-size: 12px;
+}
+
+.field input,
+.field select {
+  font-size: 14px;
+}
+
+.nav-item {
+  font-size: 12px;
+}
+
+.sidebar-tip p,
+.sidebar-role,
+.workspace small {
+  font-size: 11px;
+  color: #9ab0cd;
+}
+
+.workspace strong {
+  font-size: 11px;
+}
+
+.sidebar-footer,
+.nav-label {
+  color: #9aacc4;
+  font-size: 10px;
+}
+
+.demo-label {
+  color: #5d718c;
+  font-size: 10px;
+}
+
+.demo-box p,
+.demo-actions button,
+.demo-box > small,
+.notification-note {
+  font-size: 11px;
+}
+
+.login-form .field label {
+  font-size: 13px;
+}
+
+.login-story-footer {
+  color: #a6b8ce;
+}
+
+.action-approve,
+.action-cancel,
+.table-actions > .icon-button {
+  min-width: 32px;
+  min-height: 32px;
+}
+
+@media (max-width: 1190px) {
+  .stat-heading {
+    font-size: 11px;
+  }
+
+  .stat-caption {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .table-scroll {
+    display: none;
+  }
+
+  .mobile-order-list {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-order-card {
+    padding: 18px 17px;
+    border-bottom: 1px solid #edf1f6;
+  }
+
+  .mobile-order-card:last-child {
+    border-bottom: 0;
+  }
+
+  .mobile-order-heading,
+  .mobile-order-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .mobile-destination {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #365572;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .mobile-destination svg {
+    color: #6c98ca;
+    margin-top: 2px;
+  }
+
+  .mobile-destination span {
+    overflow-wrap: anywhere;
+  }
+
+  .mobile-trip-dates {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    color: #637b96;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .mobile-trip-dates svg {
+    color: #96aac0;
+  }
+
+  .mobile-order-footer {
+    margin-top: 16px;
+  }
+
+  .mobile-order-footer .requester {
+    font-size: 11px;
+  }
+
+  .mobile-order-footer .table-actions {
+    gap: 7px;
+  }
+
+  .mobile-order-footer .table-actions .icon-button {
+    min-width: 40px;
+    min-height: 40px;
+    background: #f5f8fc;
+    color: #6c84a3;
+  }
+
+  .mobile-order-footer .table-actions .action-approve {
+    background: #eef9f3;
+    color: #3b906b;
+  }
+
+  .mobile-order-footer .table-actions .action-cancel {
+    background: #fff2f4;
+    color: #bd6273;
+  }
+
+  .sidebar {
+    visibility: hidden;
+  }
+
+  .sidebar-open {
+    visibility: visible;
+  }
+
+  .stat-card {
+    min-height: 133px;
+  }
+
+  .stat-heading {
+    font-size: 11px;
+  }
+
+  .stat-caption {
+    font-size: 10px;
+  }
+
+  .section-eyebrow > small {
+    max-width: 58%;
+    font-size: 10px;
+    text-align: right;
+    line-height: 1.6;
+  }
+
+  .orders-panel-header p {
+    font-size: 11px;
+  }
+
+  .modal-footer .button {
+    min-height: 44px;
+    font-size: 12px;
+  }
+
+  .field input,
+  .field select {
+    font-size: 16px;
+  }
+
+  .icon-button {
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  .filter-main .button,
+  .filter-main select,
+  .search-field {
+    min-height: 42px;
+  }
+
+  .search-field input,
+  .filter-main select {
+    font-size: 13px;
+  }
+
+  .panel-header-actions .button {
+    min-height: 40px;
+    font-size: 11px;
+  }
+
+  .table-footer {
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
